@@ -1,0 +1,114 @@
+.
+├── file.txt
+├── main
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-311.pyc
+│   │   ├── admin.cpython-39.pyc
+│   │   ├── apps.cpython-311.pyc
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── models.cpython-311.pyc
+│   │   ├── models.cpython-39.pyc
+│   │   ├── urls.cpython-311.pyc
+│   │   ├── urls.cpython-39.pyc
+│   │   ├── views.cpython-311.pyc
+│   │   └── views.cpython-39.pyc
+│   ├── templates
+│   │   └── main
+│   │       ├── base.html
+│   │       ├── home.html
+│   │       ├── logout.html
+│   │       └── navbar.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── netfix
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── settings.cpython-311.pyc
+│   │   ├── settings.cpython-39.pyc
+│   │   ├── urls.cpython-311.pyc
+│   │   ├── urls.cpython-39.pyc
+│   │   ├── views.cpython-311.pyc
+│   │   └── views.cpython-39.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   ├── views.py
+│   └── wsgi.py
+├── services
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-311.pyc
+│   │   ├── admin.cpython-39.pyc
+│   │   ├── apps.cpython-311.pyc
+│   │   ├── forms.cpython-311.pyc
+│   │   ├── forms.cpython-39.pyc
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── models.cpython-311.pyc
+│   │   ├── models.cpython-39.pyc
+│   │   ├── urls.cpython-311.pyc
+│   │   ├── urls.cpython-39.pyc
+│   │   ├── views.cpython-311.pyc
+│   │   └── views.cpython-39.pyc
+│   ├── services.py
+│   ├── templates
+│   │   └── services
+│   │       ├── field.html
+│   │       ├── list.html
+│   │       ├── request_service.html
+│   │       └── single_service.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── static
+│   └── css
+│       ├── customer.png
+│       ├── logo.png
+│       └── style.css
+└── users
+    ├── admin.py
+    ├── apps.py
+    ├── forms.py
+    ├── __init__.py
+    ├── migrations
+    │   └── __init__.py
+    ├── models.py
+    ├── __pycache__
+    │   ├── admin.cpython-311.pyc
+    │   ├── admin.cpython-39.pyc
+    │   ├── apps.cpython-311.pyc
+    │   ├── forms.cpython-311.pyc
+    │   ├── forms.cpython-39.pyc
+    │   ├── __init__.cpython-311.pyc
+    │   ├── __init__.cpython-39.pyc
+    │   ├── models.cpython-311.pyc
+    │   ├── models.cpython-39.pyc
+    │   ├── urls.cpython-311.pyc
+    │   ├── urls.cpython-39.pyc
+    │   ├── views.cpython-311.pyc
+    │   └── views.cpython-39.pyc
+    ├── templates
+    │   └── users
+    │       ├── profile.html
+    │       ├── register_company.html
+    │       ├── register_customer.html
+    │       └── register.html
+    ├── tests.py
+    ├── urls.py
+    └── views.py

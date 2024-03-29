@@ -1,4 +1,3 @@
-
 # NetFix
 
 ## Description
@@ -50,6 +49,16 @@ To test the Django project:
 2. Navigate to `http://127.0.0.1:8000/` or `http://localhost:8000/`.
 3. You should see the homepage of the Django project.
 4. Test various features of the website, such as requesting services and navigating through different pages.
+
+### Generating File Tree Structure (for Mohamed use with AI)
+
+To generate a file tree structure excluding the `myenv` folder:
+
+1. Navigate to the project directory in the terminal.
+2. Run the following command:
+    ```
+    tree -I 'myenv' > file.txt
+    ```
 
 ## Additional Information
 

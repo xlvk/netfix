@@ -18,12 +18,44 @@ def validate_email(value):
 
 
 class CustomerSignUpForm(UserCreationForm):
-    pass
+    email = forms.EmailField(required=True)
+
+    class Meta:
+        model = User
+        fields = ("username", "email", "password1", "password2")
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        validate_email(email)
+        return email
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.is_customer = True
+        if commit:
+            user.save()
+        return user
 
 
 class CompanySignUpForm(UserCreationForm):
-    pass
+    email = forms.EmailField(required=True)
 
+    class Meta:
+        model = User
+        fields = ("username", "email", "password1", "password2")
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        validate_email(email)
+        return email
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.is_company = True
+        if commit:
+            user.save()
+        return user
+    
 
 class UserLoginForm(forms.Form):
     def __init__(self, *args, **kwargs):
@@ -37,3 +69,7 @@ class UserLoginForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super(UserLoginForm, self).__init__(*args, **kwargs)
         self.fields['email'].widget.attrs['autocomplete'] = 'off'
+
+
+class LoginForm(AuthenticationForm):
+    username = forms.CharField(label='Email / Username')

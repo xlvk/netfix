@@ -4,7 +4,8 @@ from django.views.generic import CreateView, TemplateView
 
 from .forms import CustomerSignUpForm, CompanySignUpForm, UserLoginForm
 from .models import User, Company, Customer
-
+from django.views import View
+from .forms import LoginForm
 
 def register(request):
     return render(request, 'users/register.html')
@@ -40,5 +41,23 @@ class CompanySignUpView(CreateView):
         return redirect('/')
 
 
-def LoginUserView(request):
-    pass
+class LoginUserView(View):
+    template_name = 'registration/login.html'
+    form_class = LoginForm
+
+    def get(self, request):
+        form = self.form_class()
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('home')  # Replace 'home' with the appropriate URL name
+            else:
+                form.add_error(None, 'Invalid username or password')
+        return render(request, self.template_name, {'form': form})

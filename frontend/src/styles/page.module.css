@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-image: rgba(16, 16, 16, 0.85);
+  backdrop-filter: blur(28.5px);
+  -webkit-backdrop-filter: blur(28.5px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: cyan;
+}
+
+.navoptions {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.navoption {
+  cursor: pointer;
+  padding: 7px 7px;
+  font-size: 1rem;
+  display: flex;
+  place-items: center;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.navoption:hover {
+  background-color: #666;
+}
+
+.profile {
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.profile:hover {
+  border: 0;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+
+.form {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profilePage {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tinput {
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 50px;
+  padding: 20px 20px;
+  width: 200px;
+  color: white;
+  height: 15px;
+}
+
+.sbtn {
+  width: 95px;
+  cursor: pointer;
+  height: 32px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.uchoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: larger;
+  font-family: "IBM Plex Sans";
+  font-weight: 100;
+}
+
+.sbtn:hover {
+  background-color: #00ffbf;
+  color: black;
+  border: 0;
+  border-radius: 24px;
+}
+
+.tgroup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dpicker::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png)
+    no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+.route {
+  color: #d4ff00;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.route:hover {
+  color: cyan;
+}
+
+.navroute {
+  color: white;
+  text-decoration: none;
+}
+
+.navroute:hover {
+  color: black;
+}
+
+.unavroute {
+  color: white;
+  text-decoration: none;
+}
+
+.companyCard {
+  width: 300px;
+  height: 250px;
+  border: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  transition: 0.5s;
+}
+
+.companyCard:hover {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+.mostRequestedWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mostRequestedWrapper > * {
+  width: 100%;
+  height: 100%;
+}
+
+.mreqtitle {
+  color: white;
+  margin-left: 30px;
+}
+
+.mreqgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 34vw);
+  grid-template-rows: repeat(3, 50vh);
+}
+
+.mreqwrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgreen {
+  color: cyan;
+}
+
+.bred {
+  color: rgb(255, 114, 114);
+}
+
+.bblue {
+  color: rgb(146, 146, 255);
+}
+
+.smol {
+  font-size: 10px;
+}
+
+.smtop {
+  margin-top: 50px;
+}
+
+.mainCardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.tableWrapper {
+  width: 90%;
+}
+
+.tableWrapper > h5 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profileBasicInfo {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  color: cyan;
+  font-size: 1.5rem;
+}
+
+
+.modalHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.fowoption {
+  all: unset;
+}
+
+
